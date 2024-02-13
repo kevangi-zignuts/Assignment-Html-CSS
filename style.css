@@ -22,65 +22,68 @@ header{
     background: url("img/header.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /* min-width: 1440px; */
-    width: 100%;
-    height: 135vh;
+    /* width: 100%; */
+    height: 100vh;
+    position: relative;
+    color: var(--white-color);
 }
 
 /* navbar css start */
 
 nav{
     display: flex;
+
+    justify-content: space-between;
 }
 
 .logo{
-    position: absolute;
-    top: 40px;
-    left: 80px;
-    min-width: 78px;
-    min-height: 35px;
-    color: var(--white-color);
-    font-size: 28px;
-    line-height: 32.81px;
+    padding: 4%;
+    font-size: 5vh;
+    line-height: 6vh;
+}
+
+#menuIcon{
+    display: none;
 }
 
 .navlinks{
     display: flex;
-    position: absolute;
-    top: 47px;
-    left: 481px;
     align-items: center;
     justify-content: space-between;
-    width: 478PX;
-    height: 22PX;
+    padding-top: 3%;
+    position: relative;
+    width: 40%;
+    overflow: hidden;
 }
 
 .navlinks li{
     list-style: none;
+
+    display: inline-block;
 }
 
 .navlinks li a{
     text-decoration: none;
+    font-size: 3vh;
+    line-height: 3.5vh;
     color: var(--white-color);
-    font-size: 18px;
-    line-height: 21px;
+    /* padding: 2vh; */
 }
 
 .bag{
-    width: 34px;
-    height: 34px;
     display: flex;
-    position: absolute;
-    top: 41px;
-    left: 1326px;
+    width: 10%;
+    padding: 4%;
 }
 
-.bag .zero{
-    width: 20px;
-    height: 25px;
-    position: absolute;
-    top: 3px;
-    left: 20PX;
+.bag-img{
+    width: 3.5vh;
+    height: 3.5vh;
+}
+
+.zero{
+    width: 2.5vh;
+    height: 2vh;
 }
 
 /* navbar css end */
@@ -92,23 +95,13 @@ nav{
 }
 
 .header-content h1{
-    width: 861px;
-    height: 208px;
-    position: absolute;
-    top: 161px;
-    left: 290px;
-    font-size: 80px;
-    line-height: 104px;
+    font-size: 9vh;
+    line-height: 10vh;
 }
 
 .header-content p{
-    position: absolute;
-    top: 383px;
-    left: 418px;
-    width: 606px;
-    height: 76px;
-    font-size: 24px;
-    line-height: 38.4px;
+    font-size: 3vh;
+    line-height: 4vh;
     opacity: 0.8;
 }
 
@@ -119,9 +112,7 @@ nav{
     max-width: 344px;
     height: 56px;
     border: 0.86px;
-    position: absolute;
-    top: 504px;
-    left: 548px;
+    margin: auto;
     border-radius: 42px;
     justify-content: space-between;
     padding: 8px 8px 8px 20px;
@@ -163,17 +154,20 @@ nav{
 /* Choose us section css start  */
 
 .choose-us{
+    width: 100%;
     display: flex;
     color: var(--black-color);
-    margin: 10vh;
+    margin: 5vh 0;
+}
+
+.choose-content-card{
+    display: flex;
 }
 
 .choose-us h2{
     padding: 5vh;
-    width: 242px;
-    height: 104px;
-    font-size: 42px;
-    line-height: 49px;
+    font-size: 5vh;
+    line-height: 7vh;
 } 
 
 .choose-us-content{
@@ -182,15 +176,15 @@ nav{
 
 .choose-us-content h3{
     padding: 2vh 0 0 2vh;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 3.5vh;
+    line-height: 3vh;
     opacity: 0.9;
 }
 
 .choose-us-content p{
     padding-left: 2vh;
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 2.5vh;
+    line-height: 3vh;
     color: var(--black-color);
 }
 
@@ -201,14 +195,14 @@ nav{
 
 .info h4 a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 2.5vh;
     color: var(--orange-dark-color);
 }
 
 .info img{
     padding-top: 2vh;
-    width: 45px;
-    height: 45px;
+    width: 5.3vh;
+    height: 5.3vh;
 }
 
 /* Choose us section css end  */
@@ -217,13 +211,14 @@ nav{
 
 .sell{
     text-align: center;
-    background: rgb(247, 247, 247, 60%);
+    background: var(--grey-light-color);
     padding: 4vh;
+    width: 100%;
 }
 
 .sell h2{
     margin: auto;
-    font-size: 42px;
+    font-size: 6vh;
     color: var(--black-color);
 }
 
@@ -233,7 +228,6 @@ nav{
     margin: 1.5vh auto;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     width: 40vh;
     height: 7vh;
     background: #EEEEEE;
@@ -243,20 +237,20 @@ nav{
 
 .sell-navlinks li{
     list-style: none;
-    padding: 0 1.5vh;
+    padding: 0 1.9vh;
 }
 
 .sell-navlinks li:hover{
     border-radius: 32px;
-    padding: 1vh;
+    padding: 1vh 1.5vh;
     background: var(--white-color);
 }
 
 .sell-navlinks li a{
     text-decoration: none;
     color: var(--black-color);
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 2vh;
+    line-height: 2vh;
     opacity: 0.8;   
 }
 
@@ -264,22 +258,26 @@ nav{
 
 /* sell card section css start */
 .sell-cards{
+    margin: auto;
     display: flex;
+    justify-content: center;
+    width: 81%;
 }
 
 /* In sell card left-right arrow css start */
-.sell-cards img{
+.sell-arrow{
     width: 9vh;
     height: 9vh;
+    margin-top: 29vh;
 }
 
 /* In sell card left-right arrow css end */
 
 .sell-card{
-    margin: 3vh auto;
+    margin: 3vh 1vh;
     border-radius: 2vh;
     width: 37vh;
-    height: 55vh;
+    background-color: hsla(0, 0%, 0%, 0.09);
 }
 
 .sell-card img{
@@ -289,7 +287,7 @@ nav{
 
 .item-details{
     text-align: left;
-    padding: 2vh;
+    padding: 1vh;
 }
 
 .item-details img{
@@ -300,7 +298,7 @@ nav{
 .item-price{
     display: flex;
     justify-content: space-between;
-    padding: 3vh;
+    padding: 0 3vh 3vh 3vh;
 }
 
 .item-price img{
@@ -313,6 +311,20 @@ nav{
 }
 
 /* sell card section css end */
+
+/* slider css start */
+
+.slider{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
+}
+
+/* slider css end */
+
 /* sell section css end */
 
 .sell-view{
@@ -323,39 +335,43 @@ nav{
 /* experience section css start */
 .experience{
     display: flex;
-    margin: 3vh;
+    margin: 15vh;
 }
 
 .experience-img img{
-    width: 629px;
-    height: 445px;
+    width: 65vh;
+    height: 45vh;
     border-radius: 20px;
     /* box-shadow: 0 0 5vh var(--orange-dark-color); */
 }
 
 .experience-content{
-    margin: 3vh;
+    margin: 0 10vh 0 13vh;
 }
 
 .experience-content h4{
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 3vh;
+    line-height: 2vh;
     color: var(--orange-dark-color);
 }
 
 .experience-content h3{
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 5vh;
+    line-height: 6vh;
     color: var(--black-color);
 }
 
 .experience-content p{
-    font-size: 18px;
+    font-size: 2vh;
     line-height: 33.3px;
 }
 
 .experience-content .info img{
-    padding-top: 2.5vh;
+    padding-top: 3vh;
+}
+
+.experience .info{
+    padding-left: 0;
 }
 
 /* experience section css end */
@@ -367,29 +383,33 @@ nav{
 }
 
 .material-content{
-    width: 40%;
-    padding: 5vh;
+    width: 50%;
+    padding: 5vh 10vh;
 }
 
 .material-content h4{
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 3vh;
+    line-height: 2vh;
     color: var(--orange-dark-color);
 }
 
 .material-content h3{
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 5vh;
+    line-height: 6vh;
     color: var(--black-color);
 }
 
 .material-content p{
-    font-size: 18px;
+    font-size: 2vh;
     line-height: 33.3px;
 }
 
 .material-content .info img{
     padding-top: 2.5vh;
+}
+
+.material-content .info{
+    padding: 0;
 }
 
 .material-img{
@@ -408,7 +428,122 @@ nav{
 }
 
 .material-img-right{
-    margin-top: 25vh;
+    margin-top: 15vh;
+    margin-left: 3vh;
 }
 
 /* material section css end */
+
+/* Testimonial section css start */
+.testimonials{
+    margin: 15vh 10vh;
+    text-align: center;
+}
+
+#test-heading{
+    font-size: 3vh;
+    line-height: 2vh;
+    color: var(--orange-dark-color);
+}
+
+#test-content{
+    font-size: 5vh;
+    line-height: 6vh;
+    color: var(--black-color);
+}
+
+.testimonial-cards{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 81%;
+}
+
+.testimonial-card{
+    margin: auto 1.5vh;
+    padding-top: 21vh;
+    width: 39vh;
+    height: 60vh;
+    border-radius: 2vh;
+}
+
+.user-review{
+    width: 35vh;
+    height: 25vh;
+    margin: 2vh 2vh;
+    padding-top: 3vh;
+    background: var(--white-color);
+    border-radius: 2vh;
+    text-align: center;
+    color: var(--black-color);
+}
+
+.card1{
+    background: url("img/testimonial1.png");
+    background-repeat: no-repeat;
+}
+.card2{
+    background: url("img/testimonial2.png");
+    background-repeat: no-repeat;
+}
+.card3{
+    background: url("img/testimonial3.png");
+    background-repeat: no-repeat;
+}
+
+.client{
+    position: relative;
+    object-fit: cover;
+    width: 65px;
+    height: 65px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    top: -60px;
+}
+
+.rating{
+    position: relative;
+    top: -60px;
+}
+
+.user-review h3, .user-review h4, .user-review p{
+    position: relative;
+    top: -60px;
+}
+
+.card-slide{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.card-slide::-webkit-scrollbar{
+    display: none;
+}
+
+.testimonials .sell-arrow{
+    margin-top: 22vh;
+}
+
+/* Testimonial section css end */
+
+/* Footer css start */
+
+footer{
+    background: #F7F7F7;
+    display: flex;
+    padding: 6vh;
+}
+
+.about, .services, .furniture, .follow{
+    padding: 0 10vh;
+    width: 25%;
+}
+
+.services h4, .furniture h4, .follow h4{
+    font-size: 2vh;
+    color: var(--orange-light-color);
+}
+
+.social img{
+    padding-right: 2vh;
+}
