@@ -2,7 +2,7 @@
 /* header class css  start*/
 
     header{
-        /* width: 156.8vh; */
+        /* width: 151.8vh; */
         /* width: 100%; */
     }
 
@@ -31,8 +31,8 @@
         top: 59%;
         left: 4%;
         width: 18%;
-        height: 30vh;
-        background-color: rgba(0, 0, 0, 0.5);
+        height: 35vh;
+        background-color: rgb(0, 0, 0);
     }
 
     .navActive{
@@ -59,7 +59,7 @@
 
 /* choose-us class css start */
     .choose-us{
-        width: 156.8vh;
+        /* width: 151.8vh; */
         display: block;
     }
     
@@ -71,38 +71,32 @@
     }
 /* choose-us class css end */
 
-/* sell section css start */
-    .sell{
-        width: 156.8vh;
-    }
-/* sell section css end */
-
 /* experience section css start */
 .experience{
-    width: 156.8vh;
+    /* width: 151.8vh; */
     flex-direction: column;
 }
 
 .experience-img img{
-    width: 81vh;
-    height: 60vh;
-    border-radius: 20px;
-    margin-left: 20%;
+    display: none;
 }
 
 .experience-content{
     justify-content: center;
-    text-align: left;
-    width: 60%;
-    margin: auto;
+    text-align: center;
+}
+.info{
+    justify-content: center;
 }
 
 /* experience section css end */
 .materials{
     flex-direction: column;
-    background: url("img/material1.png");
+    background: linear-gradient(rgba(255, 255, 255, 0.102), rgba(255, 255, 255, 0.089)), url("img/material2.png");
     background-repeat: no-repeat;
     background-size: cover;
+    /* margin-left: 19%; */
+    /* width: 100%; */
 }
 
 .material-img{
@@ -110,20 +104,248 @@
 }
 
 .material-content{
-    width: 70%;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
     margin: auto;
+    z-index: 5;
 }
 
+.material-content h3{
+    font-size: 6vh;
+    line-height: 33.3px;
+}
+
+.material-content p{
+    font-size: 3vh;
+    line-height: 33.3px;
+}
+
+.testimonials{
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+#test-heading{
+    font-size: 4vh;
+}
+
+#test-content{
+    font-size: 6vh;
+}
+
+.testimonial-cards{
+    width: 102vh;
+}
+
+.testimonial-card{
+    margin: auto 1.5vh;
+    padding-top: 23vh;
+    width: 39vh;
+    height: 60vh;
+    border-radius: 2vh;
+}
+
+.user-review{
+    width: 35vh;
+    height: 32vh;
+    margin: 2vh 2vh;
+    padding-top: 3vh;
+    background: white;
+    border-radius: 2vh;
+    text-align: center;
+    color: #1E1E1E;
+}
 }
 
 
-@media(max-width: 425px){
+@media(max-width: 765px){
     body{
-        margin: 0;
-        padding: 0;
+        width: 106vh;
     }
     header{
-        background: #0d1b39c8;
-        /* max-width: 1496px; */
+        background: #1e1e1ec9;
+        height: 150vh;
+    }
+    nav{
+        padding: 7vh;
+    }
+    .logo{
+        font-size: 12vh;
+        padding: 8vh;
+    }
+    #menuIcon{
+        font-size: 12vh;
+        padding: 5vh;
+    }
+    .bag{
+        padding: 8vh;
+    }
+    
+    .bag-img{
+        width: 7vh;
+        height: 7vh;
+    }
+    .navlinks{
+        width: 50%;
+        height: 60vh;
+        z-index: 1;
+    }
+    .navlinks li{
+        padding: 5vh;
+    }
+    .navlinks li a{
+        font-size: 5vh;
+    }
+ 
+    .zero{
+        width: 5vh;
+        height: 4vh;
+    }
+
+    .header-content{
+        padding-top: 10vh;
+    }
+
+    .header-content p{
+        font-size: 4vh;
+        padding: 3vh;
+    }
+
+    .search{
+        margin-top: 8vh;
+    }
+
+    .search input{
+        font-size: 3vh;
+    }
+    .choose-content-card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .choose-us h2{
+        font-size: 10vh;
+        line-height: 11vh;
+    }
+
+    .choose-us-content h3{
+        font-size: 8vh;
+    }
+
+    .choose-us-content p{
+        font-size: 5vh;
+        line-height: 6vh;
+    }
+
+    .info{
+        justify-content: center;
+    }
+
+    .info h4 a{
+        font-size: 5vh;
+    }
+
+    .info img{
+        width: 10vh;
+        height: 10vh;
+    }
+
+    .sell h2{
+        font-size: 8vh;
+    }
+    
+    .sell-navlinks{
+        width: 58vh;
+        height: 10vh;
+    }
+    
+    .sell-navlinks li a{
+        font-size: 4vh;
+    }
+
+    .sell-cards{
+        width: 70%;
+    }
+    .sell-card{
+        width: 50vh;
+        margin-left: 5vh;
+    }
+    .sell-card img{
+        width: 40vh;
+        height: 43vh;
+    }
+    .item-details img{
+        width: 120px;
+        height: 20px;
+    }
+
+    .item-details p{
+        font-size: 4vh;
+    }
+    .item-details h3{
+        font-size: 8vh;
+    }
+    .item-price img{
+        width: 48px;
+        height: 48px;
+    }
+
+    .sell-arrow{
+        margin-top: 44vh;
+    }
+
+    .item-price p{
+        font-size: 5vh;
+    }
+    .item-price img{
+        width: 55px;
+        height: 55px;
+    }
+    .experience-content h4{
+        font-size: 4vh;
+    }
+    .experience-content h3{
+        font-size: 7vh;
+        line-height: 8vh;
+    }
+    .experience-content p{
+        font-size: 3vh;
+    }
+    .material-content h4{
+        font-size: 5vh;
+    }
+    .material-content h3{
+        line-height: 8vh;
+    }
+    .testimonial-cards{
+        width: 74%;
+    }
+    .testimonial-card{
+        height: 70vh;
+        margin-left: 2vh;
+    }
+    .testimonials .sell-arrow{
+        margin: 30vh 4vh;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .about img{
+        width: 20vh;
+    }
+    .about, .services, .furniture, .follow{
+        width: 100%;
+    }
+    .services h4, .furniture h4, .follow h4{
+        font-size: 5vh;
+    }
+    .about p, .services p, .furniture p, .follow p{
+        font-size: 3vh;
     }
 }
+
+
+
+
