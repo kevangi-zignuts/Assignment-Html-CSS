@@ -1,11 +1,34 @@
+@media(max-width: 1450px){
+    .experience{
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+    .experience-content h4{
+        margin-top: 0;
+    }
+    .experience-content .info img{
+        margin-top: -1.5vh;
+        padding-top: 0;
+    }
+    .material-content{
+        padding: 0;
+    }
+    .material-content .info img{
+        margin-top: 1.5vh;
+    }
+    .testimonial-cards{
+        width: 84%;
+    }
+    .testimonial-cards .sell-arrow{
+        margin-top: 30vh;
+    }
+}
+
 @media(max-width: 1128px){
-    /* header class css  start*/
-    
-        header{
-            /* width: 151.8vh; */
-            /* width: 100%; */
+        body{
+            overflow-x: none;
         }
-    
+    /* header class css  start*/
         .logo{
             width: 85%;
         }
@@ -72,301 +95,331 @@
     /* choose-us class css end */
     
     /* experience section css start */
-    .experience{
-        /* width: 151.8vh; */
-        flex-direction: column;
-    }
-    
-    .experience-img img{
-        display: none;
-    }
-    
-    .experience-content{
-        justify-content: center;
-        text-align: center;
-    }
-    .info{
-        justify-content: center;
-    }
-    
-    /* experience section css end */
-    .materials{
-        flex-direction: column;
-        /* background: linear-gradient(rgba(255, 255, 255, 0.102), rgba(255, 255, 255, 0.089)), url("img/material2.png"); */
-        /* background-repeat: no-repeat; */
-        /* background-size: cover; */
-        /* margin-left: 19%; */
-        /* width: 100%; */
-    }
-    
-    .material-img{
-        display: none;
-    }
-    
-    .material-content{
-        justify-content: center;
-        text-align: center;
-        width: 80%;
-        margin: auto;
-        z-index: 5;
-    }
-    
-    .material-content h3{
-        font-size: 6vh;
-        line-height: 10vh;
-    }
-    
-    .material-content p{
-        font-size: 3vh;
-        line-height: 33.3px;
-    }
-    
-    .testimonials{
-        margin: 0;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    #test-heading{
-        font-size: 4vh;
-    }
-    
-    #test-content{
-        font-size: 6vh;
-    }
-    
-    .testimonial-cards{
-        width: 102vh;
-    }
-    
-    .testimonial-card{
-        margin: auto 1.5vh;
-        padding-top: 23vh;
-        width: 39vh;
-        height: 60vh;
-        border-radius: 2vh;
-    }
-    
-    .user-review{
-        width: 35vh;
-        height: 32vh;
-        margin: 2vh 2vh;
-        padding-top: 3vh;
-        background: white;
-        border-radius: 2vh;
-        text-align: center;
-        color: #1E1E1E;
-    }
-    }
-    
-    
-    @media(max-width: 765px){
-        body{
-            width: 106vh;
-        }
-        header{
-            background: linear-gradient(rgba(0, 0, 0, 0.383), rgba(0, 0, 0, 0.375)), url("img/header.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 150vh;
-        }
-        nav{
-            padding: 7vh;
-        }
-        .logo{
-            font-size: 12vh;
-            padding: 8vh;
-        }
-        #menuIcon{
-            font-size: 12vh;
-            padding: 5vh;
-        }
-        .bag{
-            padding: 8vh;
-        }
-        
-        .bag-img{
-            width: 7vh;
-            height: 7vh;
-        }
-        .navlinks{
-            width: 50%;
-            height: 60vh;
-            z-index: 1;
-        }
-        .navlinks li{
-            padding: 5vh;
-        }
-        .navlinks li a{
-            font-size: 5vh;
-        }
-    
-        .zero{
-            width: 5vh;
-            height: 4vh;
-        }
-    
-        .header-content{
-            padding-top: 10vh;
-        }
-    
-        .header-content p{
-            font-size: 4vh;
-            padding: 3vh;
-        }
-    
-        .search{
-            margin-top: 8vh;
-        }
-    
-        .search input{
-            font-size: 3vh;
-        }
-        .choose-content-card{
+        .experience{
             flex-direction: column;
+        }
+    
+        .experience-img img{
+            display: none;
+        }
+    
+        .experience-content{
+            justify-content: center;
             text-align: center;
         }
-    
-        .choose-us h2{
-            font-size: 10vh;
-            line-height: 11vh;
-        }
-    
-        .choose-us-content h3{
-            font-size: 8vh;
-        }
-    
-        .choose-us-content p{
-            font-size: 5vh;
-            line-height: 6vh;
-        }
-    
         .info{
             justify-content: center;
         }
     
-        .info h4 a{
-            font-size: 5vh;
-        }
-    
-        .info img{
-            width: 10vh;
-            height: 10vh;
-        }
-    
-        .sell h2{
-            font-size: 8vh;
-        }
-        
-        .sell-navlinks{
-            width: 58vh;
-            height: 10vh;
-        }
-        
-        .sell-navlinks li a{
-            font-size: 4vh;
-        }
-    
-        .sell-cards{
-            width: 70%;
-        }
-        .sell-card{
-            width: 50vh;
-            margin-left: 5vh;
-        }
-        .sell-card img{
-            width: 40vh;
-            height: 43vh;
-        }
-        .item-details img{
-            width: 120px;
-            height: 20px;
-        }
-    
-        .item-details p{
-            font-size: 4vh;
-        }
-        .item-details h3{
-            font-size: 8vh;
-        }
-        .item-price img{
-            width: 48px;
-            height: 48px;
-        }
-    
-        .sell-arrow{
-            margin-top: 44vh;
-        }
-    
-        .item-price p{
-            font-size: 5vh;
-        }
-        .item-price img{
-            width: 55px;
-            height: 55px;
-        }
-        .experience-content h4{
-            font-size: 7vh;
-        }
-        .experience-content h3{
-            font-size: 10vh;
-            line-height: 12vh;
-        }
-        .experience-content p{
-            font-size: 5vh;
-            line-height: 7vh;
-        }
-        .experience .info img{
-            margin-top: 36px;
-        }
-        .material-content h4{
-            font-size: 8vh;
-        }
-        .material-content h3{
-            font-size: 10vh;
-            line-height: 13.5vh;
-        }
-        .material-content p{
-            font-size: 6vh;
-            line-height: 7vh;
-        }
-        .materials .info img{
-            margin-top: 50px;
-        }
-        .testimonial-cards{
-            width: 74%;
-        }
-        }
-        #test-heading{
-            font-size: 8vh;
-        }
-        #test-content{
-            font-size: 10vh;
-        }
-        .testimonial-card{
-            height: 70vh;
-            margin-left: 2vh;
-        }
-        .testimonials .sell-arrow{
-            margin: 30vh 4vh;
-        }
-        footer{
+    /* experience section css end */
+        .materials{
             flex-direction: column;
         }
-        .about img{
-            width: 20vh;
+    
+        .material-img{
+            display: none;
         }
-        .about, .services, .furniture, .follow{
-            width: 100%;
+    
+        .material-content{
+            justify-content: center;
+            text-align: center;
+            width: 80%;
+            margin: auto;
         }
-        .services h4, .furniture h4, .follow h4{
-            font-size: 5vh;
+    
+        .material-content h3{
+            font-size: 6vh;
+            line-height: 10vh;
         }
-        .about p, .services p, .furniture p, .follow p{
+    
+        .material-content p{
             font-size: 3vh;
+            line-height: 33.3px;
         }
+    
+        .testimonials{
+            margin: 0;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        #test-heading{
+            font-size: 4vh;
+        }
+    
+        #test-content{
+            font-size: 6vh;
+        }
+    
+        .testimonial-cards{
+            width: 102vh;
+        }
+    
+        .testimonial-card{
+            margin: 4vh 1.5vh;
+            padding-top: 23vh;
+            width: 39vh;
+            height: 60vh;
+            border-radius: 2vh;
+        }
+    
+        .user-review{
+            width: 35vh;
+            height: 32vh;
+            margin: 2vh 2vh;
+            padding-top: 3vh;
+            background: white;
+            border-radius: 2vh;
+            text-align: center;
+            color: #1E1E1E;
+        }
+}
+    
+@media(max-width: 910px){
+    body{
+        width: 115vh;
+    }
+}
+@media(max-width: 635px){
+    body{
+        width: 116vh;
+        overflow-x: none;
+    }
+    header{
+        background: linear-gradient(rgba(0, 0, 0, 0.383), rgba(0, 0, 0, 0.375)), url("img/header/header.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150vh;
+    }
+    nav{
+        padding: 7vh;
+    }
+    .logo{
+        font-size: 12vh;
+        padding: 8vh;
+    }
+    #menuIcon{
+        font-size: 12vh;
+        padding: 5vh;
+    }
+    .bag{
+        padding: 8vh;
+    }    
+    .bag-img{
+        width: 7vh;
+        height: 7vh;
+    }
+    .navlinks{
+        width: 50%;
+        height: 60vh;
+        z-index: 1;
+    }
+    .navlinks li{
+        padding: 5vh;
+    }
+    .navlinks li a{
+        font-size: 5vh;
+    }
+
+    .zero{
+        width: 5vh;
+        height: 4vh;
+    }
+
+    .header-content{
+        padding-top: 10vh;
+    }
+
+    .header-content p{
+        font-size: 4vh;
+        padding: 3vh;
+    }
+
+    .search{
+        margin-top: 8vh;
+    }
+
+    .search input{
+        font-size: 3vh;
+    }
+    .choose-content-card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .choose-us h2{
+        font-size: 10vh;
+        line-height: 11vh;
+    }
+
+    .choose-us-content h3{
+        font-size: 8vh;
+    }
+
+    .choose-us-content p{
+        font-size: 5vh;
+        line-height: 6vh;
+    }
+
+    .info{
+        justify-content: center;
+    }
+
+    .info h4 a{
+        font-size: 5vh;
+    }
+
+    .info img{
+        width: 10vh;
+        height: 10vh;
+    }
+
+    .sell h2{
+        font-size: 8vh;
     }
     
+    .sell-navlinks{
+        width: 58vh;
+        height: 10vh;
+    }
     
-    
-    
+    .sell-navlinks li{
+        font-size: 4vh;
+    }
+    .sell-cards{
+        width: 95%;
+    }
+    .sell-card{
+        min-width: 68vh;
+        min-height: 100vh;
+        margin-left: 5vh;
+    }
+    .sell-card img{
+        width: 64vh;
+        height: 67vh;
+    }
+    .item-details p{
+        font-size: 5vh;
+        margin:0;
+    }
+    .item-details img{
+        width: 130px;
+        height: 25px;
+    }
+    .item-price p{
+        font-size: 5vh;
+    }
+    .item-details h3{
+        font-size: 8vh;
+    }
+    .item-price img{
+        width: 55px;
+        height: 55px;
+        margin-top: 4vh;
+    } 
+    .sell-arrow{
+        margin-top: 59vh;
+    }
+    .sell-arrow img{
+        width: 15vh;
+    }
+    .experience-content h4{
+        font-size: 7vh;
+    }
+    .experience-content h3{
+        font-size: 10vh;
+        line-height: 12vh;
+    }
+    .experience-content p{
+        font-size: 5vh;
+        line-height: 7vh;
+    }
+    .experience .info img{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .material-content h4{
+        font-size: 8vh;
+    }
+    .material-content h3{
+        font-size: 10vh;
+        line-height: 13.5vh;
+    }
+    .material-content p{
+        font-size: 6vh;
+        line-height: 7vh;
+    }
+    .materials .info img{
+        margin-top: 50px;
+    }
+    /* Testinomial css start */
+    .testimonials{
+        margin: 4vh 0;
+    }
+    #test-heading{
+        font-size: 8vh;
+    }
+    #test-content{
+        font-size: 10vh;
+    }
+    .testimonial-cards{
+        width: 94%;
+    }
+    .testimonial-card{
+        margin-left: 2vh;
+        padding-top: 40vh;
+        min-width: 70vh;
+        height: 100vh;
+    }
+    .user-review{
+        width: 65vh;
+        height: 55vh;
+    }
+    .client{
+        top: -110px;
+        width: 20vh;
+        height: 20vh;
+    }
+    .user-review h3, .user-review h4, .user-review p{
+        top: -140px;
+    }
+    .user-review h3{
+        font-size: 5vh;
+    }
+    .user-review h4{
+        font-size: 4vh;
+    }
+    .user-review p{
+        font-size: 3vh;
+    }
+    .user-review .rating{
+        top: -140px;
+        width: 20vh;
+    }
+    .testimonials .sell-arrow{
+        margin: 45vh 4vh;
+    }
+    #TestimonialnextBtn{
+        margin-left: 0;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .about img{
+        width: 30vh;
+    }
+    .about, .services, .furniture, .follow{
+        width: 100%;
+    }
+    .services h4, .furniture h4, .follow h4{
+        font-size: 8vh;
+        line-height: 8vh;
+    }
+    .about p, .services p, .furniture p, .follow p{
+        font-size: 5vh;
+        line-height: 7vh;
+    }
+    .follow p img{
+        width: 7vh;
+    }
+}

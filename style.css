@@ -14,12 +14,13 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: none;
 }
 
 /* header section css start */
 
 header{
-    background: url("img/header.png");
+    background: url("img/header/header.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -237,6 +238,10 @@ nav{
 .sell-navlinks li{
     list-style: none;
     padding: 0 1.9vh;
+    color: var(--black-color);
+    font-size: 2vh;
+    line-height: 2vh;
+    opacity: 0.8; 
 }
 
 .sell-navlinks li:hover{
@@ -245,38 +250,26 @@ nav{
     background: var(--white-color);
 }
 
-.sell-navlinks li a{
-    text-decoration: none;
-    color: var(--black-color);
-    font-size: 2vh;
-    line-height: 2vh;
-    opacity: 0.8;   
-}
-
 /* sell navbar section css end */
 
 /* sell card section css start */
+
 .sell-cards{
-    margin: auto;
+    padding: 3vh;
     display: flex;
     justify-content: center;
-    width: 81%;
+    width: 100%;
 }
 
-/* In sell card left-right arrow css start */
-.sell-arrow{
-    width: 9vh;
-    height: 9vh;
-    margin-top: 29vh;
+.slider{
+    display: flex;
 }
-
-/* In sell card left-right arrow css end */
 
 .sell-card{
     margin: 3vh 1vh;
-    border-radius: 2vh;
-    width: 40vh;
+    min-width: 38vh;
     background-color: hsla(0, 0%, 0%, 0.09);
+    border-radius: 2vh;
 }
 
 .sell-card img{
@@ -307,12 +300,21 @@ nav{
 
 .item-details-price{
     background: var(--white-color);
+    border-radius: 0 0 2vh 2vh;
 }
+
+/* In sell card left-right arrow css start */
+.sell-arrow{
+    width: 9vh;
+    height: 9vh;
+    margin-top: 29vh;
+}
+
+/* In sell card left-right arrow css end */
 
 /* sell card section css end */
 
 /* slider css start */
-
 .slider{
     display: flex;
     overflow-x: scroll;
@@ -320,7 +322,7 @@ nav{
 
 .slider::-webkit-scrollbar{
     display: none;
-}
+} 
 
 /* slider css end */
 
@@ -438,13 +440,11 @@ nav{
     margin: 15vh 10vh;
     text-align: center;
 }
-
 #test-heading{
     font-size: 3vh;
     line-height: 2vh;
     color: var(--orange-dark-color);
 }
-
 #test-content{
     font-size: 5vh;
     line-height: 6vh;
@@ -459,7 +459,7 @@ nav{
 }
 
 .testimonial-card{
-    margin: auto 1.5vh;
+    margin: 1.5vh;
     padding-top: 21vh;
     width: 39vh;
     height: 60vh;
@@ -468,7 +468,7 @@ nav{
 
 .user-review{
     width: 35vh;
-    height: 25vh;
+    height: 26vh;
     margin: 2vh 2vh;
     padding-top: 3vh;
     background: var(--white-color);
@@ -478,16 +478,19 @@ nav{
 }
 
 .card1{
-    background: url("img/testimonial1.png");
+    background: url("img/testimonials/testimonial1.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .card2{
-    background: url("img/testimonial2.png");
+    background: url("img/testimonials/testimonial2.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .card3{
-    background: url("img/testimonial3.png");
+    background: url("img/testimonials/testimonial3.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .client{
@@ -547,3 +550,5 @@ footer{
 .social img{
     padding-right: 2vh;
 }
+
+
